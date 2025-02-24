@@ -5,17 +5,23 @@ body {
     padding: 0;
     background-color: #0c0c0c;
 }
+
 .container {
+    position: relative;
     padding: 50px;
 }
+
 h1 {
     font-size: 3em;
     margin-bottom: 20px;
 }
+
 p {
     font-size: 1.5em;
     margin-bottom: 40px;
+    animation: typing 5s;
 }
+    
 .download-btn {
     padding: 15px 30px;
     font-size: 1.2em;
@@ -46,3 +52,18 @@ a {
     color: #fff;
     text-decoration: none;
 }
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.typewriter::after {
+    content: "|";
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+.typewriter.done::after {
+    content: "";
+}
+
