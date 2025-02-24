@@ -21,8 +21,9 @@ p {
     margin-bottom: 40px;
     animation: typing 5s;
 }
-    
+
 .download-btn {
+    visibility: hidden;
     padding: 15px 30px;
     font-size: 1.2em;
     color: #fff;
@@ -31,11 +32,10 @@ p {
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-    transition-duration: 0.4s;
     border: 2px solid #fff;
 }
 
-.download-btn:hover {
+.download-btn:hover{
     color: #0c0c0c;
     background-color: #fff;
 }
